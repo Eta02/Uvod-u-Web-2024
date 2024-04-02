@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/contact-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <img alt="logo" src="../images/logo-brown.png" />
+          <ul>
+            <li><a href="single-post.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="sign-in.html">Sing in</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="title">
+          <h2>Contact Us</h2>
+          <p>Have questions or sugestions?Feel free to reach out to us!</p>
+        </div>
+        <div class="form">
+          <form action="/action_page.php">
+            <div class="name"><label for="name">Name:</label><br /></div>
+            <br />
+            <div class="box-1">
+              <input type="text" id="name" name="name" value=" " /><br />
+            </div>
+            <br />
+            <div class="name"><label for="email">Email:</label><br /></div>
+            <br />
+            <div class="box-1">
+              <input type="email" id="email" name="email" /><br />
+            </div>
+            <br />
+            <div class="name"><label for="message">Message:</label><br /></div>
+            <br />
+            <div class="box-2">
+              <textarea id="message" name="message"></textarea><br />
+            </div>
+
+            <br />
+            <div class="submit">
+              <input type="submit" value="Submit" style="font-weight: bold" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="flex-row">
+          <div class="footer-img">
+            <img alt="logo" src="../images/logo-brown.png" />
+            <p>
+              Our photography blog is powered by a dedicted team of passionate
+              photographers, talanted writers, and tech enthusiasts - discover
+              more about us at our "About Us" section.
+            </p>
+          </div>
+          <div class="footer-links">
+            <p>Links:</p>
+            <a href="single-post.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-icons">
+            <p>Follow us:</p>
+            <div class="items">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">
+          &copy; 2024 Photography Blog. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
