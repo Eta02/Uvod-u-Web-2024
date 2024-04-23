@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  background-color: #adb5bd;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+}
+
+.left-container,
+.right-container {
+  flex-grow: 1;
+}
+
+.left-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 125px);
+  margin: 24px;
+  width: 200px;
+}
+
+.right-container {
+  align-items: center;
+  text-align: center;
+  margin: auto 24px;
+}
+
+.right-container > * {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #868e96;
+  border-radius: 5px;
+
+  display: grid;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* OFF */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+/* ON */
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+#volumeSlider {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+  background-color: #343a40;
+  border-radius: 10px;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 40px;
+  background-color: #364fc7;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+#soundName {
+  background-color: #868e96;
+  display: grid;
+  margin: 0 auto;
+  width: 125px;
+  align-items: center;
+}
+
+.container h1 {
+  margin-bottom: 0;
+}
+.absolute-text {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.hidden {
+  display: none;
+}

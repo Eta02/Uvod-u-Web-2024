@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <button id="button0">Q</button>
+        <button id="button1">W</button>
+        <button id="button2">E</button>
+        <button id="button3">A</button>
+        <button id="button4">S</button>
+        <button id="button5">D</button>
+        <button id="button6">Z</button>
+        <button id="button7">X</button>
+        <button id="button8">C</button>
+      </div>
+
+      <div class="right-container">
+        <h1>Power</h1>
+
+        <label class="switch">
+          <input type="checkbox" id="power" checked />
+          <span class="slider"></span>
+        </label>
+
+        <p id="soundName"></p>
+
+        <p id="volumeValue">Volume: 0</p>
+        <input
+          type="range"
+          id="volumeSlider"
+          min="0"
+          max="100"
+          oninput="updateVolume()"
+        />
+
+        <h1>Bank</h1>
+
+        <label class="switch">
+          <input type="checkbox" id="bankSwitch" />
+          <span class="slider" style="background-color: blue"></span>
+        </label>
+      </div>
+
+      <div class="absolute-text">FCC🔥</div>
+    </div>
+    <div class="hidden"></div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
